@@ -1,7 +1,7 @@
 import {
   useCreateMyRestaurant,
   useGetMyRestaurant,
-  useGetMyRestaurantOrders,
+  //useGetMyRestaurantOrders,
   useUpdateMyRestaurant,
 } from "@/api/MyRestaurantApi";
 // import OrderItemCard from "@/components/OrderItemCard";
@@ -15,7 +15,7 @@ const ManageRestaurantPage = () => {
   const { updateRestaurant, isLoading: isUpdateLoading } =
     useUpdateMyRestaurant();
 
-  const { orders } = useGetMyRestaurantOrders();
+  //const { orders } = useGetMyRestaurantOrders();
 
   const isEditing = !!restaurant;
 
